@@ -19,5 +19,4 @@ def print_asterisks(password):
     print("*" * length)
 
 
-
 main()
