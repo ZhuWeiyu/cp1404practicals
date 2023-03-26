@@ -1,37 +1,29 @@
 import random
-
-LOWEST_SCORES = 0
-HIGHEST_SCORES = 100
+LOWEST_LIMIT = 0
+HIGHEST_LIMIT = 100
 EXCELLENT_SCORES = 90
 PASS_SCORES = 50
 
 
 def main():
-    score = get_valid_score()
-    score_level = determine_score_level(score)
-    print(score_level)
-    score = random.randint(0, 100)
-    score_level = determine_score_level(score)
-    print(f"Your random score is {score} and your random score level is {score_level}")
-
-
-def get_valid_score():
     score = float(input("Enter score:"))
-    while LOWEST_SCORES>score or score > HIGHEST_SCORES:
+    if score < LOWEST_LIMIT or score > HIGHEST_LIMIT:
         print("invalid score")
-        score = float(input("Enter score:"))
-    return score
-
-
-def determine_score_level(score):
-    if score >= EXCELLENT_SCORES:
-        score_level = "excellent"
-    elif score >= PASS_SCORES:
-        score_level = "pass"
     else:
-        score_level = "bad"
-    return score_level
+        print(user_score(score))
 
+    random_score = random.randint(LOWEST_LIMIT, HIGHEST_LIMIT + 1)
+    print(f"\nRandom score {random_score}")
+    print(f"Examination level；{user_score(random_score)}")
+
+
+def user_score(score):
+    if score >= PASS_SCORES:
+        return "Passable"
+    elif score >= EXCELLENT_SCORES:
+        return "Excellent"
+    elif score < PASS_SCORES:
+        return "Bad"
 
 
 main()
