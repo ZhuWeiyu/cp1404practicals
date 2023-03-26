@@ -26,5 +26,4 @@ def user_score(score):
         return "Bad"
 
 
-
 main()
