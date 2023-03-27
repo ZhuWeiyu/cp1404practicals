@@ -26,7 +26,6 @@ def main():
     print("Thanks for you playing. See you next time.")
 
 
-
 def get_valid_score():
     score = int(input("Enter score: "))
     while LOWEST_SCORES > score or score > HIGHEST_SCORES:
