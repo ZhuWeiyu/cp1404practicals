@@ -30,6 +30,4 @@ def main():
         print(f"Guitar {i}: {guitar.name:>{length}}({guitar.year}), worth $ {guitar.cost:,.2f}  {added} ")
 
 
-
-
 main()
