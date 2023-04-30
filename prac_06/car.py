@@ -6,7 +6,6 @@ class Car:
 
         fuel: float, one unit of fuel drives one kilometre
         """
-        # 6. Now add a name field to the Car class.
         self.name = name
         self.fuel = fuel
         self._odometer = 0

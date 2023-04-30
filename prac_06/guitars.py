@@ -29,5 +29,4 @@ def main():
         added = "(vintage)" if guitar.is_vintage() else""
         print(f"Guitar {i}: {guitar.name:>{length}}({guitar.year}), worth $ {guitar.cost:,.2f}  {added} ")
 
-
 main()
