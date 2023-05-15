@@ -23,4 +23,3 @@ class DynamicWidget(App):
 
 
 DynamicWidget().run()
-
