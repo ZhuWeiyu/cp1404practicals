@@ -13,3 +13,4 @@ else:
         print("Excellent")
     elif score < 50:
         print("Bad")
+
