@@ -11,3 +11,4 @@ Throughout this course, I have learned several important lessons about writing c
 Naming: Choose meaningful and descriptive names for variables, functions, and classes to make the code more understandable and maintainable.
 Comments and Documentation: Provide clear and concise comments to explain the purpose and behavior of code, as well as using docstrings for functions and classes.
 Code Structure: Use appropriate whitespace, indentation, and line breaks to make the code more readable, and follow established language conventions and style guides.
+
